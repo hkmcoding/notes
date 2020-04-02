@@ -1,2 +1,3 @@
-# notes
-A collection of my notes and sandboxes
+### Directory
+
+* [JavaScript](./topics/javascript.md)
