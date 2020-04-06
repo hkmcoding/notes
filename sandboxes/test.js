@@ -1,14 +1,13 @@
-let board = ''
-let boardSize = 8
-for(let x = 0; x < boardSize; x++) {
-  for(let y = 0; y < boardSize; y++) {
-    if((x + y) % 2 === 0) {
-      board += ' '
-    } else {
-      board += '#'
-    }
+let countChar = (string, char) => {
+  let charCount = 0
+  for(let i = 0; i < string.length; i++) {
+    if(string[i] === char) charCount++
   }
-  board += '\n'
+  return charCount
 }
 
-console.log(board)
+let countBs = string => {
+  return countChar(string, 'B')
+}
+
+console.log(countBs("BIGBALLERBRAND"))
