@@ -68,8 +68,20 @@ Passing this string to console.log should show something like this:
 When you have a program that generates this pattern, define a binding size = 8 and change the program so that it works for any size, outputting a grid of the given width and height.
 */
 
-// My solution (I had to look at the book solution first) - trying it again after looking at the book solution
-// I couldn't solve the problem and had to look at the book solution for the answer.
+// My solution (I had to look at the hints first)
+let board = ''
+let gridSize = 10
+for(let x = 0; x < gridSize; x++) {
+  for(let y  = 0; y < gridSize; y++) {
+    if((x + y) % 2 === 0) {
+      board += ' '
+    } else {
+      board += '#'
+    }
+  }
+  board += '\n'
+}
+console.log(board)
 
 // Nested for loops - The outer loop always executes first, and the inner loop executes inside the outer loop each time the outer loop executes once
 
@@ -84,7 +96,6 @@ for(let x = 0; x < gridSize; x++) {
       board += '#'
     }
   }
-  // This will execute after the inner loop is done
   board += '\n'
 }
 console.log(board)
