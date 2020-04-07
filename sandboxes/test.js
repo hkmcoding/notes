@@ -1,13 +1,7 @@
-let countChar = (string, char) => {
-  let charCount = 0
-  for(let i = 0; i < string.length; i++) {
-    if(string[i] === char) charCount++
-  }
-  return charCount
-}
-
-let countBs = string => {
-  return countChar(string, 'B')
-}
-
-console.log(countBs("BIGBALLERBRAND"))
+console.log(Math.max(1, 5, 3))
+console.log(Math.min(9, 5, 3))
+let myObject = {value: 10}
+let testBinding = myObject
+console.log(testBinding.value)
+myObject.value = 20
+console.log(testBinding.value)
