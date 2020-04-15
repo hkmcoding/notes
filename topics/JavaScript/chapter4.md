@@ -5,7 +5,6 @@
 ```
 let array = [1, 2, 3, 4, 5]
 ```
-- 
 ## Properties
 - myString.length is an example of a property
 - In the above example, we are trying to access the length property of myString
@@ -80,3 +79,84 @@ console.log(testBinding.value)
 const score = {visitors: 0, home: 0}
 score.visitors = 1
 ```
+
+## Brace Notation Shorthand
+- If a property name in brace notation isn't followed by a value, its value is taken from the binding with the same name
+```
+let journal = []
+addEntry = entry => {
+  journal.push({entry})
+}
+addEntry("test")
+// [ { entry: 'test' } ]
+```
+
+## Array Methods
+- Arrays have an ```includes``` method that checks whether a given value exists in an array
+- ```Array.prototype.pop()``` - removes the last element from an array and returns that value to the caller
+- ```Array.prototype.push()``` - adds new items to the end of an array and returns the new length
+- ```Array.prototype.shift()``` - removes the first element from an array and returns that removed element
+- ```Array.prototype.unshift()``` - adds one or more items or elements to the beginning of the array and returns the new length of the array
+- ```Array.prototype.indexOf()``` - searches through the array from the start to finish and returns the index at which the requested value was found, or -1 if the value was not found
+- There is also a similar method called ```lastIndexOf```, but it searches from the end of the array to the start
+> Both ```indexOf``` and ```lastIndexOf``` take an optional second argument that indicates where to start searching
+- ```Array.prototype.slice()``` - Takes start and end indices and returns an array that has only the elements between them
+> The start index is inclusive and the end index is exclusive. When the end index is not given, ```slice``` will take all of the elements after the start index
+- The ```concat``` method can be used to glue arrays together to create a new array, similar to what the + operator does for strings
+> If you pass ```concat``` an argument that is not an array, that value will be added to the new array as if it were a one-element array
+
+## Array Loops
+- The following is an example of a very commonly used loop
+```
+for (let i = 0; i < array.length; i++) {
+  let entry = array[i]
+  // do something with entry
+}
+```
+- This can be rewritten as:
+```
+for (let entry of array) {
+  // do something with entry
+}
+```
+- This works not only for arrays but also for strings and some other data structures
+
+## Strings and their Properties
+- The ```trim``` method removes whitespace (spaces, newlines, tabs, and similar characters) from the start and end of a string
+- You can split a string on every occurrence of another string with ```split``` and join it again with ```join```
+- A string can be repeated with the ```repeat``` method, which contains a new string containing multiple copies of the original string, glued together
+```
+console.log("LA".repeat(3))
+// LALALA
+```
+- You can access a string's individual characters like you access array elements
+
+## Rest Parameters
+- When a function using a rest parameter is called, the rest parameter is bound to an array containing all further arguments
+```
+function max(...numbers) {
+
+}
+```
+- You can use a similar three-dot notation to call a function with an array of arguments
+- This spreads out the array into the function call, passing its elements as separate arguments
+
+## The Math Object
+- Math.max
+- Math.min
+- Math.random (returns a psuedo-random number between 0 and 1)
+- Math.floor (rounds down to the nearest whole number)
+- Math.ceil (rounds up to the nearest whole number)
+
+## Destructuring
+- Destructuring assignment makes it possible to unpack values from arrays, or properties from objects, into distinct variables
+```
+let {name} = {name: "Humza", age: 24}
+console.log(name)
+// Humza
+```
+
+## JSON
+- JavaScript gives us the functions JSON.stringify and JSON.parse to convert data to and from the JSON format
+- ```JSON.stringify``` takes a JavaScript value and returns a JSON-encoded string
+- ```JSON.parse``` takes a string and converts it to the value it encodes
