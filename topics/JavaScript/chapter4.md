@@ -42,7 +42,7 @@ console.log("propertyName" in myObject)
 console.log(Object.keys({x: 0, y: 0, z: 0}))
 // -> ["x", "y", "z"]
 ```
-- There's also an *Object.assign* function that copies alll properties from one object into another
+- There's also an *Object.assign* function that copies all properties from one object into another
 - Arrays are just a kind of object specialized for storing sequences of things
 - If you evaluate ```typeof []``` it produces "object"
 
