@@ -4,3 +4,4 @@
 * [How Does the Internet Work](./howdoestheinternetwork.md)
 * [What is the difference between webpage, website, web server, and search engine?](./sitesserversandsearchengines.md)
 * [How Does the Web Work](./howdoesthewebwork.md)
+* [Command Line Basics](./commandline.md)
