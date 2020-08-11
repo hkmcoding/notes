@@ -3,3 +3,4 @@
 * [TheOdinProject](./topics/TheOdinProject/directory.md)
 * [EloquentJavaScript](./topics/EloquentJavaScript/directory.md)
 * [JustJavascript](./topics/JustJavscript/directory.md)
+* [JS Notes](./topics/JSNotes/directory.md)
