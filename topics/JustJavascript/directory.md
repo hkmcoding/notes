@@ -8,3 +8,4 @@
 * [06. Equality  of Values](./06-equality-of-values.md)
 * [07. Properties](./07-properties.md)
 * [08. Mutation](./08-mutation.md)
+* [09. Prototypes](./09-prototypes.md)
