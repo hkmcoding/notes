@@ -34,4 +34,4 @@ greetLetter = greet();
 greetLetter(); // logs 'Hi Hammad'
 ```
 
-Another type of closue is Immediately-Invoked Function Expression (IIFE).
+Another type of closure is Immediately-Invoked Function Expression (IIFE).

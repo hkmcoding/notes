@@ -6,7 +6,7 @@ In JavaScript, there are two types of scopes: global scope and local scope.
 
 ##### Global Scope
 
-There is only one global scope throughout a JavaScript document. Variables inside the global scope can be accessed anda ltered in any other scope.
+There is only one global scope throughout a JavaScript document. Variables inside the global scope can be accessed and altered in any other scope.
 
 ##### Local Scope
 
@@ -32,7 +32,7 @@ function grandfather() {
         // name is accessible here
         // likes is not accessible here
         function child() {
-            // Innermost level of the scope chain
+            // Innermost lev
             // name is also accessible here
             var likes = 'Coding';
         }
